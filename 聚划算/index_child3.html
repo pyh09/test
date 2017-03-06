@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Document</title>
+    <link href="css/base.css" rel="stylesheet">
+    <style type="text/css" media="screen">
+        html{
+            font-size:100px;
+        }
+        .p_box{
+          height:10.07rem;
+        }
+        .p_box .nav{
+            height:1rem;
+            background:-webkit-linear-gradient(left,#f8f8f8,#f4f4f4,#fafafa);
+        }
+        .p_box .nav .back{
+            width:1.3rem;
+            height:0.64rem;
+            background:url(images/fanhui.png) no-repeat;
+            background-size:cover;
+            margin-left:0.2rem;
+            margin-top:0.22rem;
+        }
+        .p_box .nav h1{
+            width:1.48rem;
+            height:0.39rem;
+            margin-left:1rem;
+            margin-top:0.32rem;
+            text-align:center;
+            line-height:0.39rem;
+        }
+        .p_box .nav h1 a{
+            width:100%;
+            height:100%;
+            display:block;
+            color:#333;
+            font-size:0.31rem;
+        }
+        /* .p_box .nav .lei{
+            width:0.96rem;
+            height:0.56rem;
+            border:1px solid #eee;
+            color:#727272;
+            font-size:0.23rem;
+            text-align:center;
+            line-height:0.56rem;
+            margin-top:0.22rem;
+            border-radius:5%;
+            margin-right:0.2rem;
+        } */
+        .p_box .link ul li{
+          width:25%;
+          height:0.8rem;
+          border:1px solid #eee;
+          box-sizing:border-box;
+          float:left;
+          text-align:center;
+          line-height:0.8rem;
+        }
+         .p_box .link ul li a{
+            width:100%;
+            height:100%;
+            color:#999;
+         }
+          .p_box .banner{
+            overflow:hidden;
+            overflow:auto;
+        }
+        .p_box .banner ul{
+            width:1000rem;
+        }
+        .p_box .banner ul li{
+            overflow:hidden;
+        }
+        .p_box .banner ul li a{
+            display:block;
+            background:url(images/banner3.png) no-repeat;
+            width:6.4rem;
+            height:2.28rem;
+            background-size:cover;
+        }
+        .p_box .p_btn{
+            position:relative;
+            height:0.3rem;
+        }
+        .p_box .p_btn .tab_btn{
+            position:absolute;
+            left:2.75rem;
+            bottom:0;
+
+        }
+        .p_box .p_btn .tab_btn li{
+            float:left;
+            width:0.1rem;
+            height:0.1rem;
+            background:#a9a9a9;
+            margin-right:0.1rem;
+            border-radius:50%;
+        }
+        .p_box .content .p_link{
+            margin-top:0.15rem;
+        }
+        .p_box .content .p_link li{
+            height:1.6rem;
+            border-top:1px solid #eee;
+        }
+        .p_box .content .p_link li a{
+            width:100%;
+            height:100%;
+            display:block;
+            position:relative;
+        }
+         .p_box .content .p_link li a div{
+              width:0.78rem;
+              height:0.78rem;
+              background:url(images/jubao.png) no-repeat;
+              background-size:cover;
+              position:absolute;
+              left:0.32rem;
+              top:0.4rem;
+         }
+         .p_box .content .p_link li a h3{
+              color:#6a237f;
+              font-size:0.34rem;
+              font-weight:bold;
+              position:absolute;
+              left:1.6rem;
+              top:0.4rem;
+         }
+
+         .p_box .content .p_link li a p{
+              color:#999;
+              font-size:0.23rem;
+              position:absolute;
+              left:1.6rem;
+              top:0.95rem;
+         }
+          .p_box .content .p_link li a span{
+              width:0.13rem;
+              height:0.22rem;
+              background:url(images/fuhao.png) no-repeat;
+              background-size:cover;
+              position:absolute;
+              right:0.36rem;
+              top:0.69rem;
+         }
+         footer{
+            height:0.88rem;
+            border-top:1px soild #eee;
+            background:#f9f9f9;
+            position:fixed;
+            bottom:0;
+            left:0;
+
+         }
+         footer .botton_nav{
+            width:6rem;
+            padding-left:0.2rem;
+            padding-top:0.15rem;
+         }
+         footer .botton_nav li{
+            float:left;
+            margin-right:1rem;
+         }
+         footer .botton_nav li a{
+            width:100%;
+            height:100%;
+            display:block;
+         }
+         footer .botton_nav li a img{
+
+         }
+    </style>
+    <script>
+        ;(function (win,doc){
+            function changeSize(){
+                doc.documentElement.style.fontSize=50*doc.documentElement.clientWidth/320+'px';
+            }
+            changeSize();
+            win.addEventListener('resize',changeSize,false);
+        })(window,document);
+</script>
+</head>
+<body>
+    <div class="p_box">
+        <header class="nav clearfix">
+            <a href="javascript:;" class="back fl"></a>
+            <h1 class="fl">
+                <a href="javascript:;">聚宝盆</a>
+            </h1>
+            <!-- <a href="javascript:;" class="lei fr">分类</a> -->
+        </header>
+        <section class="link">
+            <ul class="clearfix">
+                <li><a href="javascript:;">商品</a></li>
+                <li><a href="javascript:;">生活</a></li>
+                <li><a href="javascript:;">品牌</a></li>
+                <li><a href="javascript:;">聚宝盆</a></li>
+            </ul>
+        </section>
+         <div class="banner">
+            <ul>
+                <li class="fl"><a href="javascript:;"></a></li>
+                <li class="fl"><a href="javascript:;"></a></li>
+                <li class="fl"><a href="javascript:;"></a></li>
+                <li class="fl"><a href="javascript:;"></a></li>
+                <li class="fl"><a href="javascript:;"></a></li>
+                <li class="fl"><a href="javascript:;"></a></li>
+
+            </ul>
+
+        </div>
+        <section class="p_btn">
+            <ol class="clearfix tab_btn">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
+        <div class="content">
+            <ul class="p_link">
+                <li>
+                    <a href="javascript:;">
+                        <div></div>
+                        <h3>聚名品</h3>
+                        <p>第一站轻奢购物</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div></div>
+                        <h3>聚名品</h3>
+                        <p>第一站轻奢购物</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div></div>
+                        <h3>聚名品</h3>
+                        <p>第一站轻奢购物</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div></div>
+                        <h3>聚名品</h3>
+                        <p>第一站轻奢购物</p>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <ul class="botton_nav">
+                <li><a href="javascript:;"><img src="images/left.png" alt="" style="width:0.23rem;
+            height:0.41rem;"></a></li>
+                <li><a href="javascript:;"><img src="images/right.png" alt="" style="width:0.23rem;
+            height:0.41rem;"></a></li>
+                <li><a href="javascript:;"><img src="images/email.png" alt="" style="width:0.38rem;
+            height:0.53rem;"></a></li>
+                <li><a href="javascript:;"><img src="images/book.png" alt="" style="width:0.52rem;
+            height:0.47rem;"></a></li>
+                <li style=" margin-right:0;"><a href="javascript:;"><img src="images/screen.png" alt="" style="width:0.49rem;
+            height:0.49rem;"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
